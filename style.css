@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSD Station 💾 - Fast & Reliable Storage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #0a0f2c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: auto;
+        }
+
+        .tagline {
+            margin-top: 5px;
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {margin-left: 0;}
+            33% {margin-left: -100%;}
+            66% {margin-left: -200%;}
+            100% {margin-left: 0;}
+        }
+
+        .products {
+            padding: 40px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin: 15px 0 10px;
+        }
+
+        .contact {
+            background: #e8ecf1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 1.8em;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+        }
+
+        footer {
+            background: #0a0f2c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="SSD Station Logo" class="logo-img">
+        <h1>SSD Station 💾</h1>
+        <p class="tagline">Fast, Reliable & Affordable Storage Solutions</p>
+    </header>
+<link rel="stylesheet" href="https://tariqimran.github.io/ssd-station/style.css">
+
+    <!-- Sliding Banner -->
+    <div class="slider">
+        <div class="slides">
+            <img src="images/banner1.jpg" alt="Banner 1">
+            <img src="images/banner2.jpg" alt="Banner 2">
+            <img src="images/banner3.jpg" alt="Banner 3">
+        </div>
+    </div>
+
+    <section class="products">
+        <h2>🔥 Featured Products</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="images/ssd1.jpg" alt="SSD 1">
+                <h3>Kingston 240GB SSD</h3>
+                <p>High-speed SATA SSD for faster boot and load times.</p>
+            </div>
+            <div class="product">
+                <img src="images/ssd2.jpg" alt="SSD 2">
+                <h3>Samsung 970 EVO 500GB NVMe</h3>
+                <p>Ultra-fast NVMe storage for gamers and professionals.</p>
+            </div>
+            <div class="product">
+                <img src="images/ram1.jpg" alt="RAM 1">
+                <h3>Corsair Vengeance 8GB DDR4</h3>
+                <p>Boost your system with high-performance RAM.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>📞 Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:ssdstation@gmail.com">ssdstation@gmail.com</a></p>
+        <p><strong>Phone:</strong> +92-300-4553699</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SSD Station 💾 | All rights reserved.</p>
+    </footer>
+</body>
+</html>

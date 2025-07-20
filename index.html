@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSD Station - SSD & RAM Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background: #1e1e2f;
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .logo-img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: #cccccc;
+    }
+
+    .slider {
+      overflow: hidden;
+      width: 100%;
+      max-width: 1200px;
+      margin: 30px auto;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      animation: slide 15s infinite ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+      height: 400px;
+    }
+
+    .products {
+      padding: 50px 20px;
+      background: #fff;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #1e1e2f;
+    }
+
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .product {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+      transition: 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      color: #222;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #1e1e2f;
+    }
+
+    .discount {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    .testimonial {
+      font-style: italic;
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .contact {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #00ffc8;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #101010;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="SSD Station Logo" class="logo-img" />
+    <h1>SSD Station 💾</h1>
+    <p class="tagline">Fast, Reliable & Affordable Storage Solutions</p>
+  </header>
+
+  <section class="slider">
+    <div class="slides">
+      <img src="images/ssd1.jpg" alt="Kingston SSD" />
+      <img src="images/ssd2.jpg" alt="Samsung NVMe SSD" />
+      <img src="images/ram1.jpg" alt="Corsair RAM" />
+      <img src="images/ssd3.jpg" alt="WD SSD" />
+      <img src="images/ram2.jpg" alt="Kingston RAM" />
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>🔥 Featured Products</h2>
+    <div class="product-gallery">
+
+      <div class="product">
+        <img src="images/ssd1.jpg" alt="SSD 128GB" />
+        <h3>SSD 128GB</h3>
+        <p>Reliable speed for daily computing.</p>
+        <p class="price">Rs. 2,850 <span class="discount">(5% OFF)</span></p>
+      </div>
+
+      <div class="product">
+        <img src="images/ssd2.jpg" alt="SSD 256GB" />
+        <h3>SSD 256GB</h3>
+        <p>Fast performance and affordable upgrade.</p>
+        <p class="price">Rs. 4,750 <span class="discount">(10% OFF)</span></p>
+      </div>
+
+      <div class="product">
+        <img src="images/ssd3.jpg" alt="SSD 512GB" />
+        <h3>SSD 512GB</h3>
+        <p>Best choice for gamers & pros.</p>
+        <p class="price">Rs. 8,999 <span class="discount">(Hot Deal!)</span></p>
+      </div>
+
+      <div class="product">
+        <img src="images/ssd3.jpg" alt="SSD 1TB" />
+        <h3>SSD 1TB</h3>
+        <p>Massive storage, blazing fast speed.</p>
+        <p class="price">Rs. 16,500 <span class="discount">(Limited Offer!)</span></p>
+      </div>
+
+      <div class="product">
+        <img src="images/ram1.jpg" alt="RAM 4GB" />
+        <h3>RAM 4GB DDR4</h3>
+        <p>Budget performance RAM for multitasking.</p>
+        <p class="price">Rs. 2,200 <span class="discount">(Save Rs.300)</span></p>
+      </div>
+
+      <div class="product">
+        <img src="images/ram2.jpg" alt="RAM 8GB" />
+        <h3>RAM 8GB DDR4</h3>
+        <p>Gaming-ready & power-efficient RAM.</p>
+        <p class="price">Rs. 5,200 <span class="discount">(Flat 10% OFF)</span></p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>📞 Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:ssdstation@gmail.com">ssdstation@gmail.com</a></p>
+    <p><strong>Phone:</strong> +92-300-4553699</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SSD Station 💾 | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
